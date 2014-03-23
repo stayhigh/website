@@ -10,5 +10,7 @@ handlers:
 - url: /
   static_files: letitgo_multilang.html
   upload: letitgo_multilang.html
-- url: /
-  static_dir: static
+  
+- url: /images/(.*)
+  static_files: images/\1
+  upload: images/(.*)
