@@ -1,0 +1,14 @@
+application: stayhighhelloworld
+version: 1 
+runtime: python27
+api_version: 1 
+threadsafe: true
+handlers:
+#- url: /.*
+#  script: stayhighhelloworld.app
+  
+- url: /
+  static_files: letitgo_multilang.html
+  upload: letitgo_multilang.html
+- url: /
+  static_dir: static
