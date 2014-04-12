@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <title>sample code for sorts of charts</title>
+  <head>
+    <title>pie chart</title>
+    <script src="Chart.js-master/Chart.js"></script>
+    <meta name = "viewport" content = "initial-scale = 1, user-scalable = no">
+  </head>
+  <body>
+  	
+	    <canvas id="myChart" width="400" height="400"></canvas>
+	    <script>
+	    //Get the context of the canvas element we want to select
+	    var ctx = document.getElementById("myChart").getContext("2d");
+
+	    //This will get the first returned node in the jQuery collection.
+	    
+			var data = [
+				{
+					value: 30,
+					color:"#F38630"
+				},
+				{
+					value : 50,
+					color : "#E0E4CC"
+				},
+				{
+					value : 100,
+					color : "#69D2E7"
+				}			
+			]
+		var myNewChart = new Chart(ctx).Pie(data);
+		</script>
+
+  </body>
+</html>
